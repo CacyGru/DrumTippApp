@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  background: #ccc;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, minmax(100px, 300px)) 1fr;
+}
+
+.container-content {
+  padding-bottom: 7vh;
+  margin-top: 7vh;
+}
+
+/* .container_absolute {
+  position: relative;
+} */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 7vh;
+  background: #3535c9;
+  color: white;
+  z-index: 2;
+}
+
+header .logo {
+  font-size: 2.3rem;
+  margin-left: 3rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.container-content {
+  grid-column: 2 / span 2;
+}
+
+.tipps {
+  margin-top: 20px;
+}
+
+.tipps h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.tipps p {
+  font-size: 2rem;
+  padding-bottom: 15px;
+  border-bottom: dotted 2px #3535c9;
+}
+
+aside {
+  position: sticky;
+  top: 10vh;
+  grid-column: 4 / span 1;
+  text-align: center;
+  height: max-content;
+  margin-top: 50px;
+}
+
+aside h2 {
+  font-size: 2rem;
+}
+
+aside p {
+  font-size: 1.5rem;
+}
+
+aside .sidenav,
+aside .geheimtip {
+  border: dotted 6px #b1b1b1;
+  border-radius: 20px;
+  margin: 20px 10px;
+  padding: 10px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+
+aside a:hover {
+  color: #3535c9;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  background: #3535c9;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+
+footer a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+}
